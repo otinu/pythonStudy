@@ -1,5 +1,3 @@
-from lxml.html.diff import is_start_tag
-
 word = "python"
 print(word[0]) # 0が先頭
 print(word[1])
