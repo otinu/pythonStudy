@@ -1,3 +1,5 @@
+from lxml.html.diff import is_start_tag
+
 word = "python"
 print(word[0]) # 0が先頭
 print(word[1])
@@ -19,3 +21,7 @@ print(word[2:])
 # 何かしたインポートすれば、容易に解決できる気がする
 word = "j" + word[1:]
 print(word)
+
+string = "Hello World"
+is_start = string.startswith("Hell")
+print(is_start)
