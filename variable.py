@@ -8,6 +8,7 @@ print(num, type(num))
 num = name
 print(num, type(num))
 
+# 型変換
 name = "2022"
 new_name = int(name)
 print(new_name, type(new_name))
