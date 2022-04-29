@@ -23,3 +23,13 @@ print(word)
 string = "Hello World"
 is_start = string.startswith("Hell")
 print(is_start)
+
+#formatメソッドを使って、文字列内への代入が可能
+set_word = "1番は{}, 2番は{}, 3番は{} が正解でした".format("イ", "ウ", "ア")
+print(set_word)
+
+set2_word = "1番は{2}, 2番は{0}, 3番は{1} が正解でした".format("イ", "ウ", "ア") #代入の順番を変更
+print(set2_word)
+
+set3_word = "昨日は{reading}して、今日は{fishing}をしました".format(reading = "読書", fishing = "釣り")
+print(set3_word)
