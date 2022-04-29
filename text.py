@@ -33,3 +33,8 @@ print(set2_word)
 
 set3_word = "昨日は{reading}して、今日は{fishing}をしました".format(reading = "読書", fishing = "釣り")
 print(set3_word)
+
+#print()内の引数に「f + 文字列」を使うことで、文字列型の変数を直接代入可能
+reading = "読書"
+fishing = "釣り"
+print(f"キャンプでは{reading}と{fishing}をしよう")
