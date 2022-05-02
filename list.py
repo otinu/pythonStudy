@@ -15,11 +15,11 @@ two_dimensional_list = [first_list, second_list]
 print(two_dimensional_list)
 
 #リストの末尾に要素を追加(PUSH)
-list1.append(100)
+list1.append(1000)
 print(list1)
 
 #リストの任意の位置に要素を挿入
-list1.insert(0, 500)
+list1.insert(0, 5000)
 print(list1)
 
 #リストの末尾を切り取り(POP)
