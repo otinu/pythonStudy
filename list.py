@@ -33,3 +33,12 @@ print(list1)
 # +を使うことで、1つの1次元配列として連結もできる
 coalescent_list = first_list + second_list;
 print(coalescent_list)
+
+# sort()を使うことで、昇順にソートする
+list1 = [3, 5, 6, 4, 1, 2]
+list1.sort()
+print(list1)
+
+# sort()の引数でreverseをtrueにすると、降順にソート
+list1.sort(reverse = True)
+print(list1)
