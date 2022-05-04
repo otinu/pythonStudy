@@ -36,9 +36,20 @@ print(coalescent_list)
 
 # sort()を使うことで、昇順にソートする
 list1 = [3, 5, 6, 4, 1, 2]
-list1.sort()
+list1.sort() #print(list1.sort())のようにメソッドチェーンはできない
 print(list1)
 
 # sort()の引数でreverseをtrueにすると、降順にソート
 list1.sort(reverse = True)
 print(list1)
+
+list3 = [10, 20, 30, 40, 50]
+list4 = list3
+list5 = list3.copy()
+
+list4[0] = 1000
+list5[0] = 1
+
+print(list3)
+print(list4)
+print(list5)
