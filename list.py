@@ -43,6 +43,8 @@ print(list1)
 list1.sort(reverse = True)
 print(list1)
 
+# リストの代入は参照渡しになる
+# copy()メソッドを使うことで、値が同じで参照先の異なるアドレスを代入することになる
 list3 = [10, 20, 30, 40, 50]
 list4 = list3
 list5 = list3.copy()
