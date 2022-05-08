@@ -32,3 +32,10 @@ print(d3)
 #指定したキーが配列内にあるか判定
 print("e" in d3)
 print("b" in d3)
+
+# copy()を使うことで、参照渡しから値渡しになる
+d4 = {"a": 1}
+d5 = d4.copy()
+d5["a"] = 1000
+print(d4)
+print(d5)
