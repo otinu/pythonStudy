@@ -9,5 +9,6 @@ b = {2, 3, 5, 6, 7}
 print(a - b)
 print(a & b)
 
+# 要素の追加
 b.add(8)
 print(b)
