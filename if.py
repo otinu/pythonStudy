@@ -23,3 +23,20 @@ a = 1
 b = 2
 if a > 0 and b > 0:
     print("aとbは0よりも大きいです")
+
+# 「a == true」とせず、変数のみの記述で分岐可能
+is_a = True
+if is_a:
+    print("aは存在します")
+# 整数の場合、「0」はfalseで判定される
+
+c = 0
+d = 1
+e = -1
+
+if c:
+    print("cはtrueです")
+if d:
+    print("dはtrueです")
+if e:
+    print("eはtrueです")
