@@ -1,3 +1,4 @@
+from gevent.libev.corecext import NONE
 
 #pythonのif文では()を使わず、インデントで識別する
 #インデントは半角空白4回(Tabキー2回)分空けるのが暗黙の了解
@@ -28,6 +29,7 @@ if a > 0 and b > 0:
 is_a = True
 if is_a:
     print("aは存在します")
+
 # 整数の場合、「0」はfalseで判定される
 
 c = 0
@@ -40,3 +42,10 @@ if d:
     print("dはtrueです")
 if e:
     print("eはtrueです")
+
+# 「is None」と「is not None」は頻繁に使われる
+is_b = None
+if is_b is None:
+    print("bはNoneです")
+if is_b is not None:
+    print("bはNoneではありません")
