@@ -31,3 +31,22 @@ print(r)
 r = add_num(a, b)
 r = add_num(true, false)
 """
+
+#プレースホルダを使って可読性高く記述することもできる
+def menu(entree, drink, dessert):
+    print("entree = ", entree)
+    print("drink = ", drink)
+    print("dessert = ", dessert)
+###定義元と引数の順番が違くても正しく実行される
+menu(drink = "coke", entree = "fruit", dessert = "cake")
+
+#デフォルト引数を定義することが可能
+def new_menu(entree = "beef", drink = "wine", dessert = "ice"):
+    print("entree = ", entree)
+    print("drink = ", drink)
+    print("dessert = ", dessert)
+
+print("オーダー入りました")
+new_menu()
+print("オーダー変更です")
+new_menu(entree = "chiken")
