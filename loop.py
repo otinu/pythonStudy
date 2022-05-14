@@ -26,3 +26,11 @@ while True:
     if num == 100:
         break
     print('next')
+
+# ブロック変数の利用
+word_list = ["I", "have", "an", "apple"]
+for word in word_list:
+    print(word)
+#文字列は1文字ずつに切り分けて取り出してくれる
+for character in "APPLE":
+    print(character)
