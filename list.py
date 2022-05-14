@@ -55,3 +55,9 @@ list5[0] = 1
 print(list3)
 print(list4)
 print(list5)
+
+#dictionary型をアンパッキングしてループできる
+d = {"x": 100, "y": 200}
+print(d.items())
+for k, v in d.items():
+    print(k, ":", v)
