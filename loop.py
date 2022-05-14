@@ -34,3 +34,12 @@ for word in word_list:
 #文字列は1文字ずつに切り分けて取り出してくれる
 for character in "APPLE":
     print(character)
+
+#for-else文の場合、ブロック変数はリストの末尾の要素をもった状態でelseへ移行する
+for fruit in ["apple", "banana", "orange"]:
+    if fruit == "banana":
+        print("I like banana")
+        #break
+    print(fruit)
+else:
+    print(fruit + "は別腹")
