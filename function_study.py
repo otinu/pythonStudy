@@ -18,3 +18,16 @@ def say_argument(word):
     print(word + "!!")
 
 say_argument("Hello")
+
+#呼び出し先で処理が可能な場合、エラーの警告が発生されない
+    ###本来はint型の引数2つを想定して定義
+def add_num(a: int, b: int) -> int:
+    return "1" + "2"
+
+r = add_num("a", "b") #string型の引数2つが与えられているのに実行できてしまう
+print(r)
+"""
+#明らかに呼び出し先の関数で処理ができない場合にはエラー警告発生
+r = add_num(a, b)
+r = add_num(true, false)
+"""
