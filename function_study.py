@@ -51,9 +51,29 @@ new_menu()
 print("オーダー変更です")
 new_menu(entree = "chiken")
 
+#デフォルト引数では参照渡しに注意が必要
+
+"""
+#デフォルト引数にリストやdictionary型などを渡すと参照渡しになってしまう
 def test_func(x, l = []):
         l.append(x)
         return l
 print(test_func(100))
 print(test_func(100))
+"""
+###参照渡し防止の対策
+def test_func(x, l = None):
+    if l is None:
+        l = []
+        l.append(x)
+        return l
 
+print(test_func(100))
+print(test_func(100))
+
+#可変長引数が定義できる
+def some_word(word, *args):
+    print("word =", word)
+    for arg in args:
+        print(arg)
+some_word("Hi!", "Hello", "GoodMorning")
