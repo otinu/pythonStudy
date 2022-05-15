@@ -71,9 +71,22 @@ def test_func(x, l = None):
 print(test_func(100))
 print(test_func(100))
 
-#可変長引数が定義できる
+#可変長引数(list型)が定義できる
 def some_word(word, *args):
     print("word =", word)
     for arg in args:
         print(arg)
 some_word("Hi!", "Hello", "GoodMorning")
+
+##可変長引数(dictionary型)が定義できる
+
+def kwargs_menu(**kwargs):
+    for k, v in kwargs.items():
+        print(k, v)
+
+d = {
+    "entree": "beef",
+    "drink": "coke",
+    "dessert": "ice"
+    }
+menu(**d)
