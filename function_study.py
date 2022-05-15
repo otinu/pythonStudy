@@ -117,3 +117,21 @@ f = outer2(1, 2)
 ### fを実行後の返り値をrに代入
 r= f()
 print(r)
+
+#デコレーター
+
+def print_info(func):
+    def wrapper(*args, **kwargs):
+        print("start")
+        result = func(*args, **kwargs)
+        print("end")
+        return result
+    return wrapper # ②print_info()はインナー関数のwrapper()の参照値を返す
+
+@print_info # ①print_info()は引数として、add_num2を受け取る
+def add_num2(a, b):
+    return a + b
+
+f = print_info(add_num2)
+r = f(10, 20)
+print(r)
