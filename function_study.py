@@ -78,7 +78,7 @@ def some_word(word, *args):
         print(arg)
 some_word("Hi!", "Hello", "GoodMorning")
 
-##可変長引数(dictionary型)が定義できる
+#可変長引数(dictionary型)が定義できる
 
 def kwargs_menu(**kwargs):
     for k, v in kwargs.items():
@@ -89,4 +89,17 @@ d = {
     "drink": "coke",
     "dessert": "ice"
     }
+###呼び出すときは**を先頭につける
 menu(**d)
+
+#関数の中で使う関数(インナー関数)を定義できる
+
+def outer(a, b):
+
+    def plus(c, d):
+        return c + d
+
+    r1 = plus(a, b)
+    print(r1 * 5)
+
+outer(1, 2)
