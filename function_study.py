@@ -50,3 +50,10 @@ print("オーダー入りました")
 new_menu()
 print("オーダー変更です")
 new_menu(entree = "chiken")
+
+def test_func(x, l = []):
+        l.append(x)
+        return l
+print(test_func(100))
+print(test_func(100))
+
