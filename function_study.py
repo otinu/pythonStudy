@@ -103,3 +103,17 @@ def outer(a, b):
     print(r1 * 5)
 
 outer(1, 2)
+
+#関数の代入と実行(クロージャ)
+def outer2(a, b):
+
+    def inner():
+        return a + b
+
+    return inner
+
+### fにouter2()のインナー関数の定義場所(参照値)を代入
+f = outer2(1, 2)
+### fを実行後の返り値をrに代入
+r= f()
+print(r)
