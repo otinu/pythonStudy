@@ -8,6 +8,11 @@ class Person(object):
         ### クラスフィールドのnameに値を入れる
         self.name = name
 
+    #デストラクタを作成
+    #    ⇒インスタンスが破棄されるときに自動的に実行される
+    def __del__(self):
+        print("See you")
+
     def who_are_you(self):
         ### 引数なしでも、クラスフィールドのnameに値が入っていれば呼び出せる
         print("I'm " + self.name)
