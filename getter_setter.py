@@ -17,8 +17,11 @@ class ToyotaCar(Car):
     def set_name(self, name):
         self.__name = name
 
+# ゲッター呼び出し
 car = ToyotaCar()
 print(car.get_name)
 
+# セッター呼び出し
+# ※※※ car.set_name("WMB")ではエラー発生 ※※※
 car.set_name = "WBM"
 print(car.get_name)
