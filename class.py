@@ -20,3 +20,16 @@ class Person(object):
 person = Person("tinu")
 person.who_are_you()
 # person.say_something()
+
+
+class meal(object):
+    main = "米"
+
+lunch = meal()
+lunch.main = "パン"
+print(lunch.main)
+
+dinner = meal()
+dinner.main = "麺"
+print(dinner.main)
+print("また" + lunch.main)

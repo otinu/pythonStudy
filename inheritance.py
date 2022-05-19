@@ -26,9 +26,11 @@ class Ship(object):
 
 # 多重継承================
 
+### 左側のクラスが優先して継承される
 class sugoiCar(Car, Ship):
     def sugoi(self):
         print("水陸両用で走ります")
 
+### CarとShipはどちらもrun()をもっているものの、実際に使われるのはCarのrun
 sugoi = sugoiCar()
 sugoi.run()
