@@ -1,6 +1,6 @@
 class Car(object):
     def run(self):
-        print("run")
+        print("Car run")
 
 class ToyotaCar(Car):
     pass
@@ -19,3 +19,16 @@ toyota_car.run()
 tesla_car = TeslaCar()
 tesla_car.run()
 tesla_car.auto_run()
+
+class Ship(object):
+    def run(self):
+        print("Ship run")
+
+# 多重継承================
+
+class sugoiCar(Car, Ship):
+    def sugoi(self):
+        print("水陸両用で走ります")
+
+sugoi = sugoiCar()
+sugoi.run()
