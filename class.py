@@ -22,8 +22,11 @@ person.who_are_you()
 # person.say_something()
 
 
+
+# クラス変数
+
 class meal(object):
-    main = "米"
+    main = "米" # 一見、フィールドに見えるものの、これがクラス変数
 
 lunch = meal()
 lunch.main = "パン"
