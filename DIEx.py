@@ -6,6 +6,7 @@
 
 # math.piは円周率の値をもっている================================
 import math
+from decimal import Decimal
 print(math.pi)
 
 # 細かすぎるときはフォーマット可能
@@ -15,3 +16,10 @@ print(math.pi)
 test = math.pi * 5
 print("出力結果:")
 print('円周率を5倍すると%2.4fである。'%test)
+
+# Pythonでのdecimal型(固定小数)やfloat型(浮動小数)================
+    #NG
+    #print(type(5.1f))
+print(int(10.45))
+print(float(10.45))
+print(Decimal(10.45))
