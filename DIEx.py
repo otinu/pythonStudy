@@ -6,7 +6,7 @@
 
 # math.piは円周率の値をもっている================================
 import math
-from decimal import Decimal
+from decimal import Decimal #☆①
 print(math.pi)
 
 # 細かすぎるときはフォーマット可能
@@ -22,4 +22,8 @@ print('円周率を5倍すると%2.4fである。'%test)
     #print(type(5.1f))
 print(int(10.45))
 print(float(10.45))
+
+# Decimalはインポートが必要 ☆①
+# Decimalはクォテーションで囲わないと誤差が出てしまう
 print(Decimal(10.45))
+print(Decimal("10.45"))
