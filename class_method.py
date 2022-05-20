@@ -1,3 +1,4 @@
+# クラスメソッド
 class Person(object):
     kind = "human"
 
