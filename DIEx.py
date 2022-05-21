@@ -68,6 +68,8 @@ print(unpack("hhh", data))
 
 #range関数の使い方==================================================
 
+## forとの組み合わせ=====
+
 ### 昇順
 for i in range(3):
     print(i)
@@ -79,5 +81,9 @@ for j in reversed(range(4)):
         print(str(j) + ",")
     else:
         print("ゴーシュ―と")
-### forと組み合わせないとrangeは本来の機能をしない
+
+##  listとの組み合わせ
+print(list(range(5)))
+
+## forと組み合わせないとrangeは本来の機能をしない
 print(range(3))
