@@ -5,10 +5,12 @@
 # ⇒ モジュールが定義している名前を確認することができる。
 
 # math.piは円周率の値をもっている================================
-import math
-from decimal import Decimal #☆①
+import math #☆①
+from decimal import Decimal #☆②
+import re
 print(math.pi)
 
+# mathはインポートが必要 ☆①
 # 細かすぎるときはフォーマット可能
 # ⇒%〇.△f
 #  ⇒〇が整数・△が小数点
@@ -23,7 +25,15 @@ print('円周率を5倍すると%2.4fである。'%test)
 print(int(10.45))
 print(float(10.45))
 
-# Decimalはインポートが必要 ☆①
+# Decimalはインポートが必要 ☆②
 # Decimalはクォテーションで囲わないと誤差が出てしまう
 print(Decimal(10.45))
 print(Decimal("10.45"))
+
+# 正規表現
+# 正規表現はreをインポート ☆③
+
+URL = "http://www.amazon.co.jp/dp/B07T9TCPZX"
+pattern = "https?://[^/]+/"
+res = re.match(pattern, URL)
+print(res.group())
