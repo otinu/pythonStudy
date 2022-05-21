@@ -2,7 +2,7 @@ import math #☆①
 from decimal import Decimal #☆②
 import re #☆③
 from struct import pack #☆④
-from struct import unpack
+from struct import unpack #☆④
 
 #対話モード時に、最後に表示した式を格納している変数==============
 # ⇒_(アンダバー)
