@@ -24,3 +24,17 @@ b = 5
 c = 3.0 + b, 5 * a
 print(c)
 # ⇒(8.0, 10)
+
+# 例外時のメッセージ====================================
+
+try:
+    ### 例外を発生させる際にメッセージを入れる
+    raise Exception("開始前","Exception発生")
+    print("開始")
+except IOError as msg:
+    print("IOError発生:",msg.args[0])
+except Exception as msg:
+    ### argsの中にリストで入っている
+    print("予期せぬ問題発生:",msg.args[1])
+else:
+    print("Else表示")
