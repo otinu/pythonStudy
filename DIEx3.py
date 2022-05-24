@@ -38,3 +38,13 @@ except Exception as msg:
     print("予期せぬ問題発生:",msg.args[1])
 else:
     print("Else表示")
+
+# sysモジュール===========================================
+
+# コマンドライン引数を扱うことが可能
+"""
+import sys
+
+print(sys.argv)
+print(sys.argv[1])
+"""
