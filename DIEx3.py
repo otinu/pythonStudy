@@ -1,3 +1,5 @@
+from collections import deque # ☆①
+
 # round()=============================================
 round_data = 0.1414210356
 ### 第二引数が0のときは、小数点第一位が0になるため注意
@@ -63,8 +65,21 @@ memo = ['玉ねぎ', ['コーラ', 'オレンジジュース']]
 mother_memo = ["カレールウ","にんじん", "じゃがいも", "豚肉"]
 memo.extend(mother_memo)
 print(memo)
+# mother_memoを要素毎に分解してmemoにつなげられている
+#⇒['玉ねぎ', ['コーラ', 'オレンジジュース'], 'カレールウ', 'にんじん', 'じゃがいも', '豚肉']
 
+## pop(), popleft()=========
 
+fishers = ["tinu", "kiss", "gure", "tyariko"]
+
+first_catch = fishers.pop()
+print(first_catch)
+# ⇒tyariko
+
+# ☆① collectionsからdequeのインポートが必要
+second_catch = deque(fishers).popleft()
+print(second_catch)
+# ⇒tinu
 
 
 
