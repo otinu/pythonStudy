@@ -77,10 +77,17 @@ print(first_catch)
 # ⇒tyariko
 
 # ☆① collectionsからdequeのインポートが必要
-second_catch = deque(fishers).popleft()
+second_catch = deque(fishers).popleft() #deque型へのキャストが必要
 print(second_catch)
 # ⇒tinu
 
+# タプルとリスト=============================================
 
+"""
+list_values = [1, 2, 3]  # リスト
+tuple_values = (1, 2, 3) # タプル
+"""
+#リストはミュータブル(変更可能)
+#タプルはイミュータブル(変更不可)
 
 
