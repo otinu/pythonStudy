@@ -15,8 +15,10 @@ print(test_text[0:2]) # ⇒ AB
 print(test_text[-3:-1]) # ⇒ CD
 
 # forとループの関係===========================
+
+## range(x, y)ではx < yの間、x～yまでループをする。
+## ⇒このため、内側1回目のループは(2,2)となり、ループ内は実行されずに終了する
 for n in range(2, 10):
-    # 外側ループ ⇒ 内側ループに入るタイミングで、内側ループに属するelseが実行 ☆①
     for x in range(2 ,n):
         print("nは" + str(n) + ", xは" + str(x))
         if n % x == 0:
@@ -35,4 +37,4 @@ nは5, xは2
 nは5, xは3
 nは5, xは4
 5 is a prime number
-"""
+""
