@@ -95,9 +95,18 @@ print(second_catch)
 """
 list_values = [1, 2, 3]  # リスト
 tuple_values = (1, 2, 3) # タプル
+
+mydict = {"L":"Lemon", "O":"Orage", "G":"Grapes"} # ディクショナリ
+mydict["L"] = "Lard"
+print(mydict["L"])
 """
+
+mydict = {"L":"Lemon", "O":"Orage", "G":"Grapes"}
+
 #リストはミュータブル(変更可能)
+#ディクショナリはミュータブル  #ただし、キーとバリューの組みは一意でなければならない
 #タプルはイミュータブル(変更不可)
+
 
 ##文字列内の文字1字1字もイミュータブル
 ## ⇒ any_text = "Bike"
