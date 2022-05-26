@@ -45,3 +45,9 @@ nは5, xは4
 index = ['Alice', 'Bob', 'Charlie']
 for index, name in enumerate(index):
     print(index, name)
+
+# 比較の判定===============================================
+
+# 文字列の比較では大文字・小文字の区別はせず、辞書順に大小が判定される
+print("Word" > "world")
+# ⇒ False
