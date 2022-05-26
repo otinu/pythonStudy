@@ -37,4 +37,11 @@ nは5, xは2
 nは5, xは3
 nは5, xは4
 5 is a prime number
-""
+"""
+# enumerate(インデックス付きループ)=======================
+
+# カウントを付きでループを回すことができる
+# ⇒Rubyのwith_index()と同じ
+index = ['Alice', 'Bob', 'Charlie']
+for index, name in enumerate(index):
+    print(index, name)
