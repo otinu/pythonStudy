@@ -10,3 +10,8 @@ print(2 ** 1 ** 3)
 ### ((48/6の整数部) / 4)の整数部
 print(48 // 6 // 4)
 
+print("===================================")
+
+books = ["mero", "waga", "rasyo", "yuki"]
+for i in range(len(books)):
+    print(i, books[i])

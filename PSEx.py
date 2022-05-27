@@ -58,6 +58,11 @@ index = ['Alice', 'Bob', 'Charlie']
 for index, name in enumerate(index):
     print(index, name)
 
+# enumerate()を使わない場合は下記のようになる
+books = ["mero", "waga", "rasyo", "yuki"]
+for i in range(len(books)):
+    print(i, books[i])
+
 # 比較の判定===============================================
 
 # 文字列の比較では大文字・小文字の区別はせず、辞書順に大小が判定される
