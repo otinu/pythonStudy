@@ -18,8 +18,18 @@ print("===================================")
 # 関数呼び出し時には引数で2が指定されるため、argには2が入ることになる
 zuru = 2
 def zurui_kannsuu(arg = 3):
-    i = 4
-    i = 5
+    zuru = 4
+    zuru = 5
     print(arg)
 
 zurui_kannsuu(zuru)
+
+# ループを1行で書いて、リストを作る=======================
+
+# for-inで作る
+cubes = [a ** 3 for a in range(5)]
+print(cubes)
+
+# lambdaで作る
+cubes = list(map(lambda a: a ** 3, range(5)))
+print(cubes)
