@@ -12,6 +12,14 @@ print(48 // 6 // 4)
 
 print("===================================")
 
-books = ["mero", "waga", "rasyo", "yuki"]
-for i in range(len(books)):
-    print(i, books[i])
+# ひっかけ===============================
+
+# 一見、argには3が代入されているように見えてしまうが、これはキーワード引数
+# 関数呼び出し時には引数で2が指定されるため、argには2が入ることになる
+zuru = 2
+def zurui_kannsuu(arg = 3):
+    i = 4
+    i = 5
+    print(arg)
+
+zurui_kannsuu(zuru)
