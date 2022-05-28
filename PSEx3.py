@@ -38,8 +38,6 @@ print("【E】", loc, "    1行目のグローバル変数locはdo_global()に�
 
 
 
-
-
 # 【参考】https://www.lifewithpython.com/2016/06/python-3-nonlocal.html
 
 # 通常、関数内で定義したローカル変数内の値を書き換えてreturnしても、呼び出し元に返すことはできない
