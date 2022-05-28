@@ -33,3 +33,15 @@ print(cubes)
 # lambdaで作る
 cubes = list(map(lambda a: a ** 3, range(5)))
 print(cubes)
+
+# ループを1行で書いて、2次元リストを作る=======================
+
+# for-inで作る
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+power = [[row[i] for row in matrix] for i in range(3)]
+print(power)
+
+# list()とzipで作る
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+power = list(zip(*matrix))
+print(power)
