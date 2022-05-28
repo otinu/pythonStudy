@@ -63,6 +63,15 @@ books = ["mero", "waga", "rasyo", "yuki"]
 for i in range(len(books)):
     print(i, books[i])
 
+"""
+# 開始する要素番号の変更も可能
+
+#要素番号1000から開始
+for index, name in enumerate(index, start - 1000):
+    print(index, name)
+
+"""
+
 # 比較の判定===============================================
 
 # 文字列の比較では大文字・小文字の区別はせず、辞書順に大小が判定される
