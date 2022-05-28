@@ -71,7 +71,11 @@ for index, name in enumerate(index, start - 1000):
     print(index, name)
 
 """
+# 辞書型にenumerate()を使うと、「要素番号 + キー」の組み合わせで出力される
+D = {"a": 100, "b": 200}
 
+for D, name in enumerate(D):
+    print(D, name)
 # 比較の判定===============================================
 
 # 文字列の比較では大文字・小文字の区別はせず、辞書順に大小が判定される
