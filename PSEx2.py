@@ -49,3 +49,29 @@ print(power)
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 power = list(zip(*matrix))
 print(power)
+
+
+loc = "1"
+def scope():
+    loc = "2"
+    def do_local():
+        loc = "3"
+    def do_nonlocal():
+        nonlocal loc
+        loc = "4"
+        """
+    def do_global():
+        global loc
+        loc = "5"
+        """
+
+    do_local()
+    print("【A】", loc)
+    do_nonlocal()
+    print("【B】", loc)
+    #do_global()
+    #print("【C】", loc)
+
+print("【D】", loc)
+scope()
+print("【E】", loc)
