@@ -57,7 +57,3 @@ print(test_return())
 
 ## ① AND ② ⇒ True
 print( 5 > -5 < 5 - 9)
-
-
-
-
