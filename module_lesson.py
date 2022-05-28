@@ -37,16 +37,35 @@ print(fish.swim())
 
  ・該当のモジュールファイルの末尾に下記のように記述
 
+モジュール名: tinumod
  ======================================================
 def My_favorite_function(string):
     print("I love this" + string + "👍")
          :
          :
 
- if __name__ == "__main__":
+if __name__ == "__main__":
     import sys
-    My_favorite_function(sys.argv[0])
-
+    My_favorite_function(sys.argv[1])
  ======================================================
 
+ 実行時(ターミナルに入力) : python tinumod.py "Fishing Rod"
+ 実行結果: I love this Fishing Rod 👍
+
+"""
+
+"""モジュールのパス解決==================================================================================
+
+https://engineerblog.mynavi.jp/technology/python-path/
+ ⇒解説が丁寧
+
+ Q.インポートしてるモジュールはローカルのどのディレクトリ(エクスプローラ)に保存されてるの？
+ A. 「inport名.__file__」とすることで取得可能
+
+ Q.モジュールの解決順序
+
+① カレントディレクトリ（Pythonを起動したときに居た場所）
+② 環境変数PYTHONPATHの値
+③ インストール場所に依存するパス
+④ .pthによって追加されるパス
 """
