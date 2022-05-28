@@ -5,6 +5,12 @@
 # 【python3 script.py one two three four five】を実行した際、コマンドライン引数の先頭は「script.py」
 # ⇒print(sys.args[0])の出力は「script.py」
 
+# https://techacademy.jp/magazine/35730
+# モジュールprocessing を用いることで、JavaやPythonで近代的なデジタルアートを再現することができる
+# time/timeit モジュールで処理時間の計測が可能
+
+# loggingモジュールのメッセージの優先度
+# ⇒CRITICAL、ERROR、WARNING、INFO、DEBUG
 
 # べき乗の優先順位====================
 
