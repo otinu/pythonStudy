@@ -20,3 +20,8 @@ from lesson_package import *
 print(utils.say_twice("Hello")) #該当パッケージ内のファイル名からの記述でOK
 print(fish.swim())
 """
+
+"""
+モジュール名はprint(importしてるモジュール名.__name__)とすることでモジュール名を取得できる
+# ⇒単に「importしてるモジュール名を文字列で指定すてばいい」とも思えるものの、処理の仕様上、中身が動的である場合には必要
+"""
