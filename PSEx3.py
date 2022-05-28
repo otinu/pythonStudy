@@ -8,6 +8,7 @@ def scope():
         nonlocal loc
         loc = "4"
     def do_global():
+        #ここでは、「グローバル変数locと同一のlocです」と宣言していることになっている
         global loc
         loc = "5"
 
