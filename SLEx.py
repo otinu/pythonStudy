@@ -28,3 +28,20 @@ print(greeting)
 
 greeting = f"{greet}{who}! Have a good day!"
 print(greeting)
+
+# else節はexcept節とfinally節の間に記述
+# 「else:」と":"を忘れないよう注意
+result = None
+try:
+    result = 5 / 0
+except ZeroDivisionError:
+    print("ZeroDiv")
+else:
+    print("else")
+finally:
+    pass
+
+# Pythonで対話モードを終了させるコマンドは「quit()」
+# ⇒ "()"を付ける点に注意
+
+# IPythonは「pip install ipython」でインストールし、「python -m IPython」で対話モードを起動できる
