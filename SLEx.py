@@ -1,3 +1,5 @@
+import random
+
 # ifの末尾に「:」が入らない点に注意
 result = [n for n in range(10) if n % 2 == 0]
 print(result)
@@ -45,3 +47,45 @@ finally:
 # ⇒ "()"を付ける点に注意
 
 # IPythonは「pip install ipython」でインストールし、「python -m IPython」で対話モードを起動できる
+
+
+# 下記のような記述をすると、タプルになる
+t = (2,)
+print(t)
+# ⇒ (2,)
+
+# この記述だとタプルではなく、int
+t = (2)
+print(t)
+# ⇒ 2
+
+
+# 文字列連結①
+a = "A"
+b = "B"
+c = "C"
+print(a,b,c) # ⇒ A B C    ##空白文字も含まれる点に注意
+print(a + b + c) # ⇒ ABC
+print(a,b + c) # ⇒ A BC   ## ","で連結すると間に空白文字が入る
+
+# 文字列連結②
+
+# joinを使うことでリスト内の要素を容易に連結できる
+# ⇒書き方が独特なため注意が必要
+text_list = [a, b, c]
+print(", ".join(text_list))
+
+
+# randomモジュール ================================================
+
+## randint()
+x = random.randint(0,10)
+print(x)
+# ⇒ 0～10までの整数をランダム生成
+
+## randrange()
+x = random.randrange(0,6,2)
+print(x)
+# ⇒ 0,2,4 のいずれかをランダム生成
+#  ⇒0～5までの範囲のうち、2で割り切れる値だけをランダム生成
+# ※randint()は指定した範囲のNまでが対象なのに対し、randrange()はN-1まで(今回は5まで)が対象である点に注意
