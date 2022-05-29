@@ -79,6 +79,7 @@ print(", ".join(text_list))
 # randomモジュール ================================================
 
 # 【参考】https://www.delftstack.com/ja/howto/python/random-integers-between-range-python/
+#         https://note.nkmk.me/python-random-randrange-randint/
 
 
 ## randint()
@@ -92,6 +93,7 @@ print(x)
 # ⇒ 0,2,4 のいずれかをランダム生成
 #  ⇒0～5までの範囲のうち、2で割り切れる値だけをランダム生成
 # ※randint()は指定した範囲のNまでが対象なのに対し、randrange()はN-1まで(今回は5まで)が対象である点に注意
+
 
 ## sample()
 
@@ -109,5 +111,18 @@ print(y)
 # ⇒ 生成されるリスト内の要素は重複しない
 
 # ※1 range()を使う場合、範囲がN-1までの点に注意
-# ※2 第一引数の要素や範囲 < 第2引数の値とはできない
+# ※2 第一引数の要素や範囲 < 第2引数の値　とはできない
 #     ⇒例えば、random.sample(range(2),3)では[0, 1, 1]や[1, 0, 1]など生成されるリスト内で重複する要素ができてしまうため
+
+
+## choice()
+sample_list = [1, 2, 3]
+print(random.choice(range(5)))
+# ⇒ 0～4の範囲でランダムに一つだけ生成
+print(random.choice(sample_list))
+# ⇒ sample_list内のいずれかの要素を一つだけ抽出(1 or 2 or 3)
+
+## random()
+print(random.random())
+# ⇒ 0.801139396078066 など
+#  ⇒ 0.0以上1.0未満の浮動小数点数float型の乱数を生成
