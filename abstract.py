@@ -13,6 +13,8 @@ class Fish(ABC):
             self.where = where
 
 class Kiss(Fish):
+
+    # Javaと同様、スーパークラスのコンストラクタが実行されてから自分のコンストラクタを実行する
     def __init__(self, where):
         print("Fisher should know Kiss lives in " + where)
 
