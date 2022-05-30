@@ -43,3 +43,10 @@ for fruit in ["apple", "banana", "orange"]:
     print(fruit)
 else:
     print(fruit + "は別腹")
+
+"""
+I like banana
+banana
+orange
+orangeは別腹
+"""
