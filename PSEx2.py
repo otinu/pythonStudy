@@ -30,13 +30,13 @@ import statistics
 data = [1,10,15,20,25,30,35]
 
 # 平均値
-rslt1 = statistics.【A】(data)
+rslt1 = statistics.mean(data)
 
 # 中央値
-rslt2 = statistics.【B】(data)
+rslt2 = statistics.median(data)
 
 # 分散値
-rslt3 = statistics.【C】(data)
+rslt3 = statistics.variance(data)
 
 
 # その他、numpyパッケージのdescribe()では平均値や中央値を一気に取得できる
