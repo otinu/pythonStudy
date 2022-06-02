@@ -28,6 +28,7 @@ who = "Tom"
 greeting = "{}{}! Have a good day!".format(greet, who)
 print(greeting)
 
+# 先頭にfを付ける
 greeting = f"{greet}{who}! Have a good day!"
 print(greeting)
 
@@ -70,7 +71,7 @@ print(a,b + c) # ⇒ A BC   ## ","で連結すると間に空白文字が入る
 
 # 文字列連結②
 
-# joinを使うことでリスト内の要素を容易に連結できる
+# joinを使うことでリスト内の要素を好みの区切り方で連結できる
 # ⇒書き方が独特なため注意が必要
 text_list = [a, b, c]
 print(", ".join(text_list))
