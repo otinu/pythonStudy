@@ -52,7 +52,7 @@ nは5, xは4
 """
 # enumerate(インデックス付きループ)=======================
 
-# カウントを付きでループを回すことができる
+# カウント付きでループを回すことができる
 # ⇒Rubyのwith_index()と同じ
 index = ['Alice', 'Bob', 'Charlie']
 for index, name in enumerate(index):
@@ -74,8 +74,12 @@ for index, name in enumerate(index, start - 1000):
 # 辞書型にenumerate()を使うと、「要素番号 + キー」の組み合わせで出力される
 D = {"a": 100, "b": 200}
 
-for D, name in enumerate(D):
-    print(D, name)
+for D, key in enumerate(D):
+    print(D, key)
+"""
+0 a
+1 b
+"""
 # 比較の判定===============================================
 
 # 文字列の比較では大文字・小文字の区別はせず、辞書順に大小が判定される
@@ -84,7 +88,7 @@ print("Word" > "world")
 
 # format()================================================
 
-# math.eはは自然対数の底 (e)、約 2.718
+# math.eは自然対数の底 (e)、約 2.718
 print(math.e)
 
 # {0:.5f} ⇒ 「0番目の引数を使う : 小数点第5位まで」
