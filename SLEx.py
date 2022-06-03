@@ -98,13 +98,13 @@ print(x)
 
 ## sample()
 
-sample_list = [0, 2, 4, 6]
 x = random.sample(range(5),3)
 print(x)
 # ⇒ [4, 1, 3]や[2, 0, 1]など
 # ⇒ 要素数が3で、各要素が0～4のいずれかの値をもつリストをランダム生成
 # ⇒ 生成されるリスト内の要素は重複しない
 
+sample_list = [0, 2, 4, 6]
 y = random.sample(sample_list, 3)
 print(y)
 # ⇒ [2, 0, 6]や[0, 2, 4]など
@@ -117,9 +117,11 @@ print(y)
 
 
 ## choice()
-sample_list = [1, 2, 3]
+
 print(random.choice(range(5)))
 # ⇒ 0～4の範囲でランダムに一つだけ生成
+
+sample_list = [1, 2, 3]
 print(random.choice(sample_list))
 # ⇒ sample_list内のいずれかの要素を一つだけ抽出(1 or 2 or 3)
 
