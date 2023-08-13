@@ -1,0 +1,85 @@
+【弱点】
+1:Pythonの環境
+4:Pythonのクラス
+9:データ型とアルゴリズム
+10:汎用OS・ランタイムサービス
+11:ファイルとディレクトリへのアクセス
+16:テスト
+17:デバッグ
+
+----------------
+
+【1:Pythonの環境】
+・「pipは最新版ではないパッケージ一覧を表示する」 ←「最新版の一覧を表示できる」となってたら誤り
+・「pip uninstallは依存関係にあるパッケージのアンインストールは行わない」
+⚠️「行う」と書かれた選択肢を選んで失点
+
+【2:コーディング規約】
+p.27 COLUMNの内容まで出題されている⭕正解だった
+⇒「Flake8はコードを自動で修正する」という文言が誤り(正解の選択肢)だった
+
+【4:Pythonの言語仕様】
+・with文を使う目的は開いたリソース(ファイル)を確実にクローズすること
+・with文にわたすオブジェクトをコンテキストマネージャー と呼ぶ
+
+【5:タイプヒント】
+「型ヒントはインポートなしで使用できる」 ⇒ これが正解だった
+「型ヒントは実行時にエラーチェックをする」 ⇒ エラー実行前が正解
+
+【6:テキストの処理】⭕正解だった
+m = re.matchの後、m.group(0)はサブグループ全体を指す
+m.group(1)からがサブグループの先頭
+
+【8:日付と時刻の処理】⭕正解だった
+import time 👈datetimeではない
+time.sleep()
+
+【9:データ型とアルゴリズム】❌たぶん間違えた
+list = [v for v in for zip((1, 2), (3, 4), (5, 6))]
+※内包表記でzipとかzip_longestを使うこともできる
+
+【10:汎用OS・ランタイムサービス】
+os.environ['PATH']
+os.getenv('PATH')
+os.environ.get('PATH')
+※全部シングルクオートあり
+
+【10:汎用OS・ランタイムサービス】
+PYTHONPATHに関する問題
+・「モジュールはリストの先頭のパスから順に探索され、最初に見つかったものがインポートされる」
+・「PYTHONPATHで設定したディレクトリ内のモジュールをインポートできる」
+・「PYTHONPATH=(Pythonスクリプトの置かれたディレクトリ) python」でPYTHONPATH設定しつつ対話モード起動
+
+【11:ファイルとディレクトリへのアクセス】
+TemporaryFileとNamedTemporaryFileの保存場所 ⇒ ディスク上
+※試験では誤った選択肢「メモリ上」を選んでしまった
+
+【14:インターネット上のデータを扱う】
+POSTを送るときは、request.Request()ではなくて、
+urlopen()になる
+
+【14:インターネット上のデータを扱う】
+これが分かってれば正解になる問題が出た
+--------------------
+result = parse.urlparse('https://www.sample.com/test/?id=xxx')
+【A】 https
+【B】 www.sample.com
+【C】 /test/
+【D】 id=xxx
+
+【A】 scheme
+【B】 hostname
+【C】 path
+【D】 query
+--------------------
+
+【16:テスト】
+self.assertFalse([]) ←この形は正解(テスト通った)だった
+self.assertTrue(1)　←やっぱり、これはテスト通った
+self.assertIsInstance(1, int)
+self.assertEqual("test", islower("test"))　👈これがまちがい。
+※assertEqualは第一・第二引数で比較して、両者が==で同じならOKになる
+
+【18:暗号関連】
+"".(secrets.choise for)みたいなやつが正解。
+randomモジュール使ってるやつは間違い
